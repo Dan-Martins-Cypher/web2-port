@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Lucas | Engenheiro de Software</title>
+    <link rel="stylesheet" href="styles.css?v=green-terminal-cards">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;600;700&family=Space+Grotesk:wght@400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/loaders/GLTFLoader.js"></script>
+</head>
+<body>
+    <header role="banner">
+        <section class="terminal-header">
+            <article class="header-content">
+                <h1>~ Daniel lucas</h1>
+                <p class="subtitle">Python • Haskell • Visão Computacional • Programação Funcional</p>
+                <nav role="navigation">
+                    <a href="#sobre" class="nav-link">sobre</a>
+                    <a href="#portfolio" class="nav-link">portfolio</a>
+                    <a href="#skills" class="nav-link">skills</a>
+                    <a href="https://github.com/Dan-Martins-Cypher" class="nav-link external" target="_blank">github</a>
+                </nav>
+            </article>
+        </section>
+    </header>
+
+    <main role="main">
+    
+        <section id="hero" class="hero">
+            <article class="hero-avatar">
+                <img src="233441970.jpg" alt="Daniel Lucas" class="avatar-hexagon">
+            </article>
+            <article class="hero-content">
+                <canvas id="three-d-canvas" class="hero-canvas"></canvas>
+                <h2 class="hero-title">$ whoami</h2>
+                <output class="hero-output">
+                    <span class="prompt">></span> Deenvolvedor de Software especializado em linguagens funcionais
+                    <br><span class="prompt">></span> Python para análise de dados e visão computacional
+                    <br><span class="prompt">></span> Haskell para programação de alta abstração e otimização de paralelismo
+                </output>
+            </article>
+        </section>
+
+
+        <section id="sobre">
+            <article class="section-content">
+                <h2 class="section-title">$ cat about.txt</h2>
+                <p class="about-text">
+                    Sou grande apreciador da programação funcional e suas aplicações 
+                    práticas em visão computacional e processamento de dados. Acredito que a elegância 
+                    de um código está em sua simplicidade e em como ele expressa ideias complexas de forma consisa.
+                </p>
+                <p class="about-text">
+                    Trabalho com Python para prototipagem rápida e experimentação em problemas reais, 
+                    e exploração de Haskell para entender conceitos fundamentais de programação funcional pura.
+                </p>
+            </article>
+        </section>
+
+        <section id="skills">
+            <article class="section-content">
+                <h2 class="section-title">$ tree skills/</h2>
+                
+                <section class="skills-grid">
+                    <article class="skill-card">
+                        <div class="terminal-titlebar">
+                            <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                            <span class="terminal-window-name">skills/python.py</span>
+                        </div>
+                        <div class="skill-card-content">
+                            <h3><span class="syntax-keyword">class</span> Python</h3>
+                            <p><span class="syntax-variable">tools</span> <span class="syntax-operator">=</span> <span class="syntax-bracket">[</span><span class="syntax-string">NumPy • Pandas • OpenCV • SciPy • Ultralytics YOLO</span><span class="syntax-bracket">]</span></p>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="terminal-titlebar">
+                            <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                            <span class="terminal-window-name">skills/web-scraping.py</span>
+                        </div>
+                        <div class="skill-card-content">
+                            <h3><span class="syntax-keyword">class</span> Web Scraping</h3>
+                            <p><span class="syntax-variable">tools</span> <span class="syntax-operator">=</span> <span class="syntax-bracket">[</span><span class="syntax-string">BeautifulSoup • Scrapy • Selenium • API REST</span><span class="syntax-bracket">]</span></p>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="terminal-titlebar">
+                            <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                            <span class="terminal-window-name">skills/haskell.hs</span>
+                        </div>
+                        <div class="skill-card-content">
+                            <h3><span class="syntax-keyword">module</span> Haskell</h3>
+                            <p><span class="syntax-variable">concepts</span> <span class="syntax-operator">=</span> <span class="syntax-bracket">[</span><span class="syntax-string">Monads • Type System</span><span class="syntax-bracket">]</span></p>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="terminal-titlebar">
+                            <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                            <span class="terminal-window-name">skills/computer-vision.py</span>
+                        </div>
+                        <div class="skill-card-content">
+                            <h3><span class="syntax-keyword">class</span> Visão Computacional</h3>
+                            <p><span class="syntax-variable">areas</span> <span class="syntax-operator">=</span> <span class="syntax-bracket">[</span><span class="syntax-string">Image Processing • Treinamento de CNNs • Edge compute</span><span class="syntax-bracket">]</span></p>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="terminal-titlebar">
+                            <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                            <span class="terminal-window-name">skills/functional.hs</span>
+                        </div>
+                        <div class="skill-card-content">
+                            <h3><span class="syntax-keyword">paradigm</span> Funcional</h3>
+                            <p><span class="syntax-variable">principles</span> <span class="syntax-operator">=</span> <span class="syntax-bracket">[</span><span class="syntax-string">Immutabilidade • Recursion • Higher-Order Functions</span><span class="syntax-bracket">]</span></p>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="terminal-titlebar">
+                            <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                            <span class="terminal-window-name">skills/c.c</span>
+                        </div>
+                        <div class="skill-card-content">
+                            <h3><span class="syntax-keyword">include</span> C</h3>
+                            <p><span class="syntax-variable">features</span> <span class="syntax-operator">=</span> <span class="syntax-bracket">[</span><span class="syntax-string">Low-level programming • Performance • Sistemas e automação</span><span class="syntax-bracket">]</span></p>
+                        </div>
+                    </article>
+                    <article class="skill-card">
+                        <div class="terminal-titlebar">
+                            <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                            <span class="terminal-window-name">skills/data.py</span>
+                        </div>
+                        <div class="skill-card-content">
+                            <h3><span class="syntax-keyword">class</span> Dados</h3>
+                            <p><span class="syntax-variable">workflow</span> <span class="syntax-operator">=</span> <span class="syntax-bracket">[</span><span class="syntax-string">Coleta • Análise • ETL • Machine Learning</span><span class="syntax-bracket">]</span></p>
+                        </div>
+                    </article>
+                </section>
+            </article>
+        </section>
+
+        <section id="portfolio">
+            <article class="section-content">
+                <h2 class="section-title">$ find . -name "*.project" -type f</h2>
+                
+                <section class="projects-container" role="feed" aria-label="Projetos do portfólio">
+
+                    <article class="loading">
+                        <output class="terminal-output">$ npm install future-projects...</output>
+                    </article>
+                </section>
+
+                <p class="github-link">
+                    Mais projetos em <a href="https://github.com/Dan-Martins-Cypher" target="_blank" rel="noopener noreferrer">github.com/Dan-Martins-Cypher</a>
+                </p>
+            </article>
+        </section>
+
+        <section id="contato" class="contact-section">
+            <article class="section-content">
+                <h2 class="section-title">$ echo "Vamos conversar?"</h2>
+                
+                <form id="contact-form" class="contact-form">
+                    <div class="terminal-titlebar form-titlebar">
+                        <span class="terminal-controls" aria-hidden="true"><span></span><span></span><span></span></span>
+                        <span class="terminal-window-name">contact/message.txt</span>
+                    </div>
+                    <fieldset>
+                        <legend class="form-legend">Envie uma mensagem</legend>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">seu nome</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">seu email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">assunto</label>
+                            <input type="text" id="subject" name="subject" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">mensagem</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="form-submit">enviar →</button>
+                    </fieldset>
+                </form>
+                
+                <div class="contact-social">
+                    <p class="contact-label">ou conecte comigo diretamente:</p>
+                    <nav role="navigation" class="contact-links">
+                        <a href="https://github.com/Dan-Martins-Cypher" class="contact-link" title="GitHub" target="_blank" rel="noopener noreferrer">
+                            GitHub
+                        </a>
+                        <a href="mailto:daniel@example.com" class="contact-link" title="Email">
+                            Email
+                        </a>
+                        <a href="https://linkedin.com" class="contact-link" title="LinkedIn" target="_blank" rel="noopener noreferrer">
+                            LinkedIn
+                        </a>
+                    </nav>
+                </div>
+            </article>
+        </section>
+        
+        <button id="scroll-to-top" class="scroll-to-top" type="button" aria-label="Voltar para o topo">
+            T O P O
+            <div id="clip">
+                <div id="leftTop" class="corner"></div>
+                <div id="rightBottom" class="corner"></div>
+                <div id="rightTop" class="corner"></div>
+                <div id="leftBottom" class="corner"></div>
+            </div>
+            <span id="rightArrow" class="arrow"></span>
+            <span id="leftArrow" class="arrow"></span>
+        </button>
+    </main>
+
+    <footer role="contentinfo">
+        <p>$ cd ~ && echo "Made with functional programming in mind" 2024</p>
+    </footer>
+
+    <script src="projects.js"></script>
+    <script src="three-animation.js"></script>
+</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daniel Lucas Portfólio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+
+        .container {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            max-width: 900px;
+            padding: 4rem;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: #333;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: #666;
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 8px;
+            padding: 2rem;
+            text-decoration: none;
+            color: white;
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(102, 126, 234, 0.4);
+        }
+
+        .card-title {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .card-description {
+            font-size: 0.95rem;
+            opacity: 0.9;
+            line-height: 1.5;
+        }
+
+        .card-icon {
+            font-size: 2.5rem;
+        }
+
+        .footer-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 2rem;
+        }
+
+        .footer-link:hover {
+            text-decoration: underline;
+        }
+
+        .info {
+            background: #f5f5f5;
+            padding: 2rem;
+            border-radius: 8px;
+            margin-top: 2rem;
+            text-align: left;
+        }
+
+        .info h3 {
+            margin-bottom: 1rem;
+            color: #333;
+        }
+
+        .info p {
+            color: #666;
+            line-height: 1.6;
+            margin-bottom: 0.8rem;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 2rem;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Daniel Lucas</h1>
+        <p class="subtitle">Engenheiro de Software • Python • Haskell • Programação Funcional</p>
+
+        <div class="grid">
+            <a href="./index.html" class="card">
+                <div class="card-icon">🖥️</div>
+                <div class="card-title">Terminal Style</div>
+                <p class="card-description">Portfolio em estilo terminal escuro com cards neon verde e ciano. Design único e futurista.</p>
+            </a>
+
+            <a href="./vanholtz-style/index.html" class="card">
+                <div class="card-icon">✨</div>
+                <div class="card-title">Van Holtz Co Style</div>
+                <p class="card-description">Portfolio minimalista e refinado inspirado em Van Holtz Co. Elegância e simplicidade.</p>
+            </a>
+        </div>
+
+        <div class="info">
+            <h3>Qual é a diferença?</h3>
+            <p><strong>Terminal Style:</strong> Design escuro com acentos neon, cards em estilo terminal Linux, muito mais animado e moderno.</p>
+            <p><strong>Van Holtz Co Style:</strong> Design minimalista refinado, paleta clara, tipografia elegante (Crimson Text + Inter), muito mais sofisticado e limpo.</p>
+            <p style="margin-top: 1rem;">Escolha o estilo que melhor representa sua visão como desenvolvedor! 🎨</p>
+        </div>
+
+        <a href="https://github.com/Dan-Martins-Cypher" class="footer-link">→ Ver GitHub</a>
+    </div>
+</body>
+</html>

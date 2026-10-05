@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <defs>
+    <clipPath id="hexagon">
+      <polygon points="200,0 346.41,100 346.41,300 200,400 53.59,300 53.59,100" />
+    </clipPath>
+    <radialGradient id="grad1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#00ff41;stop-opacity:0.3" />
+      <stop offset="100%" style="stop-color:#00d9ff;stop-opacity:0.1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background hexagon com gradient -->
+  <polygon points="200,0 346.41,100 346.41,300 200,400 53.59,300 53.59,100" 
+           fill="url(#grad1)" stroke="#00ff41" stroke-width="2" opacity="0.8"/>
+  
+  <!-- Inner circle with pattern -->
+  <circle cx="200" cy="200" r="150" fill="#151d3a" opacity="0.9"/>
+  
+  <!-- Hexagon border glow effect -->
+  <polygon points="200,0 346.41,100 346.41,300 200,400 53.59,300 53.59,100" 
+           fill="none" stroke="#00d9ff" stroke-width="1" opacity="0.6" 
+           style="filter: drop-shadow(0 0 10px rgba(0, 217, 255, 0.5))"/>
+  
+  <!-- Pattern decoration -->
+  <g opacity="0.4" stroke="#00ff41" stroke-width="0.5" fill="none">
+    <circle cx="200" cy="200" r="100"/>
+    <circle cx="200" cy="200" r="75"/>
+    <circle cx="200" cy="200" r="50"/>
+  </g>
+  
+  <!-- Center text placeholder -->
+  <text x="200" y="185" text-anchor="middle" font-family="JetBrains Mono" 
+        font-size="32" fill="#00ff41" opacity="0.8" text-anchor="middle">→</text>
+  <text x="200" y="225" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="16" fill="#00d9ff" opacity="0.6">Daniel Lucas</text>
+  
+  <!-- Instruction text -->
+  <text x="200" y="380" text-anchor="middle" font-family="Arial, sans-serif" 
+        font-size="12" fill="#a0a0a0">Substitua esta imagem</text>
+</svg>
